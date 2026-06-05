@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="File" position="(72.0, 341.0)" />
+		<node id="1" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus" position="(191.99999999999997, 341.0)" />
+		<node id="2" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Python Script" position="(346.0, 341.0)" />
+		<node id="3" name="Corpus" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" project_name="Orange3-Text" version="" title="Corpus (1)" position="(620.1304347826083, 341.0)" />
+		<node id="4" name="Sentiment Analysis" qualified_name="orangecontrib.text.widgets.owsentimentanalysis.OWSentimentAnalysis" project_name="Orange3-Text" version="" title="Sentiment Analysis" position="(752.63768115942, 340.7391304347828)" />
+		<node id="5" name="Box Plot" qualified_name="Orange.widgets.visualize.owboxplot.OWBoxPlot" project_name="Orange3" version="" title="Box Plot" position="(881.0217391304346, 118.2898550724637)" />
+		<node id="6" name="Pivot Table" qualified_name="Orange.widgets.data.owpivot.OWPivot" project_name="Orange3" version="" title="Pivot Table" position="(868.5000000000001, 525.8333333333335)" />
+		<node id="7" name="Scatter Plot" qualified_name="Orange.widgets.visualize.owscatterplot.OWScatterPlot" project_name="Orange3" version="" title="Scatter Plot" position="(903.4999999999999, 339.1666666666667)" />
+		<node id="8" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(486.83333333333326, 340.83333333333326)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="2" source_node_id="3" sink_node_id="4" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="3" source_node_id="4" sink_node_id="5" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="6" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="5" source_node_id="4" sink_node_id="7" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+		<link id="6" source_node_id="2" sink_node_id="8" source_channel="Data" sink_channel="Corpus" enabled="true" source_channel_id="data" sink_channel_id="corpus" />
+		<link id="7" source_node_id="8" sink_node_id="3" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASVMQwAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIw2QzovVXNlcnMvR2VicnVpa2VyL0Rvd25sb2Fkcy9ua21pZ3JhbnRzX2ludGVydmlld3Mu
+Y3N2lIwGcHJlZml4lE6MB3JlbHBhdGiUTowFdGl0bGWUjACUjAVzaGVldJRoDowLZmlsZV9mb3Jt
+YXSUTnViaAYpgZR9lChoCYw1QzovVXNlcnMvR2VicnVpa2VyL0Rvd25sb2Fkcy9kYXRhc2V0MV9r
+anlnX3NhbXBsZS5jc3aUaAtOaAxOaA1oDmgPaA5oEE51YmgGKYGUfZQoaAmMJUM6L1VzZXJzL0dl
+YnJ1aWtlci9Eb3dubG9hZHMva2p5Zy5jc3aUaAtOaAxOaA1oDmgPaA5oEE51YmgGKYGUfZQoaAmM
+RkM6L1VzZXJzL0dlYnJ1aWtlci9Eb3dubG9hZHMvcHJlc2lkZW50X3NwZWVjaGVzX2RlbW9jcmF0
+aWNfZXJhICgxKS5jc3aUaAtOaAxOaA1oDmgPaA5oEE51YmgGKYGUfZQoaAmMOUM6L1VzZXJzL0dl
+YnJ1aWtlci9Eb3dubG9hZHMvbmlraF9jbHVzdGVyaW5nX2RlbW8gKDEpLmNzdpRoC05oDE5oDWgO
+aA9oDmgQTnViaAYpgZR9lChoCYxCQzovVXNlcnMvR2VicnVpa2VyL0Rvd25sb2Fkcy9wcmVzaWRl
+bnRfc3BlZWNoZXNfZGVtb2NyYXRpY19lcmEuY3N2lGgLTmgMTmgNaA5oD2gOaBBOdWJoBimBlH2U
+KGgJjGlDOi9Vc2Vycy9HZWJydWlrZXIvT25lRHJpdmUvQ29tcHV0ZXIvQnVyZWF1YmxhZC9OaWV1
+d2UgbWFwICgyKS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvaXJpcy50YWKUaAuM
+D3NhbXBsZS1kYXRhc2V0c5RoDIwIaXJpcy50YWKUaA1oDmgPaA5oEE51YmgGKYGUfZQoaAmMbEM6
+L1VzZXJzL0dlYnJ1aWtlci9PbmVEcml2ZS9Db21wdXRlci9CdXJlYXVibGFkL05pZXV3ZSBtYXAg
+KDIpL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy90aXRhbmljLnRhYpRoC2gjaAyM
+C3RpdGFuaWMudGFilGgNaA5oD2gOaBBOdWJoBimBlH2UKGgJjGxDOi9Vc2Vycy9HZWJydWlrZXIv
+T25lRHJpdmUvQ29tcHV0ZXIvQnVyZWF1YmxhZC9OaWV1d2UgbWFwICgyKS9MaWIvc2l0ZS1wYWNr
+YWdlcy9PcmFuZ2UvZGF0YXNldHMvaG91c2luZy50YWKUaAtoI2gMjAtob3VzaW5nLnRhYpRoDWgO
+aA9oDmgQTnViaAYpgZR9lChoCYxyQzovVXNlcnMvR2VicnVpa2VyL09uZURyaXZlL0NvbXB1dGVy
+L0J1cmVhdWJsYWQvTmlldXdlIG1hcCAoMikvTGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2RhdGFz
+ZXRzL2hlYXJ0X2Rpc2Vhc2UudGFilGgLaCNoDIwRaGVhcnRfZGlzZWFzZS50YWKUaA1oDmgPaA5o
+EE51YmgGKYGUfZQoaAmMc0M6L1VzZXJzL0dlYnJ1aWtlci9PbmVEcml2ZS9Db21wdXRlci9CdXJl
+YXVibGFkL05pZXV3ZSBtYXAgKDIpL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy9i
+cm93bi1zZWxlY3RlZC50YWKUaAtoI2gMjBJicm93bi1zZWxlY3RlZC50YWKUaA1oDmgPaA5oEE51
+YmgGKYGUfZQoaAmMaEM6L1VzZXJzL0dlYnJ1aWtlci9PbmVEcml2ZS9Db21wdXRlci9CdXJlYXVi
+bGFkL05pZXV3ZSBtYXAgKDIpL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy96b28u
+dGFilGgLaCNoDIwHem9vLnRhYpRoDWgOaA9oDmgQTnViZYwLcmVjZW50X3VybHOUXZSME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAdMAAABVAAAELAAAAr4AAAHUAAAAcwAABCsAAAK9
+AAAAAAAAAAAGAAAAAdQAAABzAAAEKwAAAr2UjAtzaGVldF9uYW1lc5R9lIwGc291cmNllEsAjAN1
+cmyUaA6MDWRvbWFpbl9lZGl0b3KUfZSMC19fdmVyc2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdz
+lF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2U
+KIwJdmFyaWFibGVzlF2UaEF9lGhNXZQoXZQojAZyZXNwaWSUjBRPcmFuZ2UuZGF0YS52YXJpYWJs
+ZZSMEkNvbnRpbnVvdXNWYXJpYWJsZZSTlEsAaA6IZV2UKIwNcmVzcG9uc2VfdHlwZZRoU4wQRGlz
+Y3JldGVWYXJpYWJsZZSTlEsAjBRoaXJlLCBuZWlnaGJvciwgdm90ZZSJZV2UKIwDc2V4lGhZSwCM
+DEZlbWFsZSwgTWFsZZSJZV2UKIwLYWdlX2NvaG9ydHOUaFlLAIwYMTgtMjksIDMwLTM5LCA0MC00
+OSwgNjArlIllXZQojA1wb2xpdGljYWxfaWQzlGhZSwCMI0NlbnRyaXN0LCBDb25zZXJ2YXRpdmUs
+IFByb2dyZXNzaXZllIllXZQojBBjbG9zZV9ua21pZ3JhbnRzlGhZSwCMVU5laXRoZXIgY2xvc2Ug
+bm9yIGRpc3RhbnQsIFNvbWV3aGF0IGNsb3NlLCBTb21ld2hhdCBkaXN0YW50LCBWZXJ5IGNsb3Nl
+LCBWZXJ5IGRpc3RhbnSUiWVdlCiMDXJlc3BvbnNlX3RleHSUaFOMDlN0cmluZ1ZhcmlhYmxllJOU
+SwJoDollZXNoQ0sBdYwKYXR0cmlidXRlc5QoaFJLAoaUaFddlCiMBGhpcmWUjAhuZWlnaGJvcpSM
+BHZvdGWUZYaUaFxdlCiMBkZlbWFsZZSMBE1hbGWUZYaUaF9dlCiMBTE4LTI5lIwFMzAtMzmUjAU0
+MC00OZSMAzYwK5RlhpRoYl2UKIwIQ2VudHJpc3SUjAxDb25zZXJ2YXRpdmWUjAtQcm9ncmVzc2l2
+ZZRlhpRoZV2UKIwZTmVpdGhlciBjbG9zZSBub3IgZGlzdGFudJSMDlNvbWV3aGF0IGNsb3NllIwQ
+U29tZXdoYXQgZGlzdGFudJSMClZlcnkgY2xvc2WUjAxWZXJ5IGRpc3RhbnSUZYaUdJSMBW1ldGFz
+lGhoSwOGlIWUjApjbGFzc192YXJzlCmMEm1vZGlmaWVkX3ZhcmlhYmxlc5RdlHViaEgpgZR9lCho
+S32UKGhNXZRoQX2UaE1dlChdlCiMBHllYXKUaFVLAGgOiGVdlCiMA2VyYZRoWUsAjElLaW0gSWwt
+c3VuZyAoMTk4Ny0xOTk0KSwgS2ltIEpvbmctaWwgKDE5OTUtMjAxMSksIEtpbSBKb25nLXVuICgy
+MDEyLTIwMTcplIllXZQojAVpc3N1ZZRoVUsAaA6IZV2UKIwGZG9jX2lklGhqSwJoDollXZQojAR0
+ZXh0lGhqSwJoDollXZQojAp5ZWFyX2lzc3VllGhqSwJoDollXZQojAV0aXRsZZRoaksCaA6JZV2U
+KIwGYXV0aG9ylGhqSwJoDollZXNoQ0sBdWhrjAR5ZWFylEsChpSMA2VyYZRdlCiMF0tpbSBJbC1z
+dW5nICgxOTg3LTE5OTQplIwXS2ltIEpvbmctaWwgKDE5OTUtMjAxMSmUjBdLaW0gSm9uZy11biAo
+MjAxMi0yMDE3KZRlhpSMBWlzc3VllEsChpSHlGiJKIwGZG9jX2lklEsDhpSMBHRleHSUSwOGlIwK
+eWVhcl9pc3N1ZZRLA4aUjAV0aXRsZZRLA4aUjAZhdXRob3KUSwOGlHSUaIwpaI1dlHViZXUu
+</properties>
+		<properties node_id="1" format="pickle">gASV8gIAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojEZD
+Oi9Vc2Vycy9HZWJydWlrZXIvRG93bmxvYWRzL3ByZXNpZGVudF9zcGVlY2hlc19kZW1vY3JhdGlj
+X2VyYSAoMSkuY3N2lIxCQzovVXNlcnMvR2VicnVpa2VyL0Rvd25sb2Fkcy9wcmVzaWRlbnRfc3Bl
+ZWNoZXNfZGVtb2NyYXRpY19lcmEuY3N2lIwRYm9vay1leGNlcnB0cy50YWKUjBhncmltbS10YWxl
+cy1zZWxlY3RlZC50YWKUjBhlbGVjdGlvbi10d2VldHMtMjAxNi50YWKUjBdmcmllbmRzLXRyYW5z
+Y3JpcHRzLnRhYpSMDGFuZGVyc2VuLnRhYpRljBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywAD
+AAAAAAImAAAA3wAAA9kAAAIzAAACJwAAAP0AAAPYAAACMgAAAAAAAAAABgAAAAInAAAA/QAAA9gA
+AAIylIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9yYW5nZXdpZGdldC5z
+ZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCGxhbmd1YWdllIwCa2+USv7/
+//+GlIwOdGl0bGVfdmFyaWFibGWUjA1yZXNwb25zZV90ZXh0lEtnhpSMCnVzZWRfYXR0cnOUXZRo
+G0tnhpRhSv3///+GlGgNSwJ1jAphdHRyaWJ1dGVzlH2UKIwGcmVzcGlklEsCjA1yZXNwb25zZV90
+eXBllEsBjANzZXiUSwGMC2FnZV9jb2hvcnRzlEsBjA1wb2xpdGljYWxfaWQzlEsBjBBjbG9zZV9u
+a21pZ3JhbnRzlEsBdYwFbWV0YXOUfZRoG0sDc4wOZG9jdW1lbnRzX2hhc2iUihGYdh+ywqSVIzPd
+9DRgi1KfAIwIbGFuZ3VhZ2WUTnViYXUu
+</properties>
+		<properties node_id="2" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01o\x00\x00\x00Z\x00\x00\x04\x90\x00\x00\x02\xb8\x00\x00\x01p\x00\x00\x00x\x00\x00\x04\x8f\x00\x00\x02\xb7\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01p\x00\x00\x00x\x00\x00\x04\x8f\x00\x00\x02\xb7', 'scriptLibrary': [{'name': 'setup.py', 'script': 'import os, os.path\nfrom glob import glob\nimport platform\nimport sys\nimport shutil\nimport subprocess\nimport re\nimport sysconfig\n\nfrom distutils import log\nfrom setuptools.command.install import install\nfrom setuptools import setup, Extension\nfrom setuptools.command.build_ext import build_ext\nfrom distutils.version import LooseVersion\n\nif os.environ.get(\'KIWI_CPU_ARCH\'):\n    from sysconfig import get_platform\n    fd = get_platform().split(\'-\')\n    if fd[0] == \'macosx\':\n        os.environ[\'_PYTHON_HOST_PLATFORM\'] = \'-\'.join(fd[:-1] + [os.environ[\'KIWI_CPU_ARCH\']])\n\nis_gil_free = sysconfig.get_config_var(\'Py_GIL_DISABLED\')\nis_limited_api = not is_gil_free and os.environ.get(\'Py_LIMITED_API\') == \'1\'\n\ndef get_extra_cmake_options():\n    """read --clean, --no, --set, --compiler-flags, and -G options from the command line and add them as cmake switches.\n    """\n    _cmake_extra_options = ["-DKIWI_BUILD_TEST=0", "-DCMAKE_POSITION_INDEPENDENT_CODE=1", "-DKIWI_USE_MIMALLOC=" + ("1" if os.environ.get(\'USE_MIMALLOC\') else "0")]\n    if os.environ.get(\'KIWI_CPU_ARCH\'):\n        _cmake_extra_options.append("-DKIWI_CPU_ARCH=" + os.environ[\'KIWI_CPU_ARCH\'])\n    if os.environ.get(\'MACOSX_DEPLOYMENT_TARGET\'):\n        _cmake_extra_options.append("-DCMAKE_OSX_DEPLOYMENT_TARGET=" + os.environ[\'MACOSX_DEPLOYMENT_TARGET\'])\n    if is_gil_free:\n        _cmake_extra_options.append("-DPy_GIL_DISABLED=1")\n    if is_limited_api:\n        _cmake_extra_options.append("-DPy_LIMITED_API=0x03090000")\n    _clean_build_folder = False\n    print(_cmake_extra_options)\n\n    opt_key = None\n\n    argv = [arg for arg in sys.argv]  # take a copy\n    # parse command line options and consume those we care about\n    for arg in argv:\n        if opt_key == \'compiler-flags\':\n            _cmake_extra_options.append(\'-DCMAKE_CXX_FLAGS={arg}\'.format(arg=arg.strip()))\n        elif opt_key == \'G\':\n            _cmake_extra_options += [\'-G\', arg.strip()]\n        elif opt_key == \'no\':\n            _cmake_extra_options.append(\'-D{arg}=no\'.format(arg=arg.strip()))\n        elif opt_key == \'set\':\n            _cmake_extra_options.append(\'-D{arg}\'.format(arg=arg.strip()))\n\n        if opt_key:\n            sys.argv.remove(arg)\n            opt_key = None\n            continue\n\n        if arg == \'--clean\':\n            _clean_build_folder = True\n            sys.argv.remove(arg)\n            continue\n\n        if arg == \'--yes\':\n            print("The --yes options to kiwipiepy\'s setup.py don\'t do anything since all these options ")\n            print("are on by default.  So --yes has been removed.  Do not give it to setup.py.")\n            sys.exit(1)\n        if arg in [\'--no\', \'--set\', \'--compiler-flags\']:\n            opt_key = arg[2:].lower()\n            sys.argv.remove(arg)\n            continue\n        if arg in [\'-G\']:\n            opt_key = arg[1:]\n            sys.argv.remove(arg)\n            continue\n\n    return _cmake_extra_options, _clean_build_folder\n\ndef num_available_cpu_cores(ram_per_build_process_in_gb):\n    import multiprocessing\n    try:\n        mem_bytes = os.sysconf(\'SC_PAGE_SIZE\') * os.sysconf(\'SC_PHYS_PAGES\')  \n        mem_gib = mem_bytes/(1024.**3)\n        num_cores = multiprocessing.cpu_count() \n        mem_cores = int(mem_gib/float(ram_per_build_process_in_gb)+0.5)\n        return max(min(num_cores, mem_cores), 1)\n    except ValueError:\n        return 2 # just assume 2 if we can\'t get the os to tell us the right answer.\n\ncmake_extra_options, clean_build_folder = get_extra_cmake_options()\n\n\nclass CMakeExtension(Extension):\n    def __init__(self, name, sourcedir=\'\', *args, **kwargs):\n        Extension.__init__(self, name, sources=[], *args, **kwargs)\n        self.sourcedir = os.path.abspath(sourcedir)\n\nclass CMakeBuild(build_ext):\n\n    def get_cmake_version(self):\n        try:\n            out = subprocess.check_output([\'cmake\', \'--version\'])\n        except:\n            sys.stderr.write("\\nERROR: CMake must be installed to build kiwipiepy\\n\\n") \n            sys.exit(1)\n        return re.search(r\'version\\s*([\\d.]+)\', out.decode()).group(1)\n\n    def run(self):\n        cmake_version = self.get_cmake_version()\n        if platform.system() == "Windows":\n            if LooseVersion(cmake_version) &lt; \'3.1.0\':\n                sys.stderr.write("\\nERROR: CMake &gt;= 3.1.0 is required on Windows\\n\\n")\n                sys.exit(1)\n\n        for ext in self.extensions:\n            self.build_extension(ext)\n\n    def build_extension(self, ext):\n        extdir = os.path.abspath(os.path.dirname(self.get_ext_fullpath(ext.name)))\n        libs = self.get_libraries(ext)\n        if is_gil_free:\n            for i, lib in enumerate(libs):\n                if re.fullmatch(r\'python3[0-9]+\', lib):\n                    libs[i] = lib + \'t\'\n        if is_limited_api:\n            for i, lib in enumerate(libs):\n                if re.fullmatch(r\'python3[0-9]+\', lib):\n                    libs[i] = \'python3\'\n\n        cmake_args = [\n            \'-DINCLUDE_DIRS={}\'.format(\';\'.join(self.include_dirs)),\n            \'-DLIBRARY_DIRS={}\'.format(\';\'.join(self.library_dirs)),\n            \'-DLIBRARIES={}\'.format(\';\'.join(libs)),\n            \'-DPYTHON_EXECUTABLE=\' + sys.executable,\n        ]\n        cmake_args += cmake_extra_options\n        print(cmake_args)\n\n        cfg = \'Debug\' if self.debug else \'Release\'\n        build_args = [\'--config\', cfg]\n\n        if platform.system() == "Windows":\n            if sys.maxsize &gt; 2**32:\n                cmake_args += [\'-A\', \'x64\']\n            else:\n                cmake_args += [\'-A\', \'Win32\']\n            build_args += [\'--\', \'/m\'] \n        else:\n            cmake_args += [\'-DCMAKE_BUILD_TYPE=\' + cfg]\n            build_args += [\'--\', \'-j\'+str(num_available_cpu_cores(2))]\n\n        build_folder = os.path.abspath(self.build_temp)\n\n        if not os.path.exists(build_folder):\n            os.makedirs(build_folder)\n\n        cmake_setup = [\'cmake\', ext.sourcedir] + cmake_args\n        cmake_build = [\'cmake\', \'--build\', \'.\'] + build_args\n\n        print("Building extension for Python {}".format(sys.version.split(\'\\n\',1)[0]))\n        print("Invoking CMake setup: \'{}\'".format(\' \'.join(cmake_setup)))\n        sys.stdout.flush()\n        subprocess.check_call(cmake_setup, cwd=build_folder)\n        print("Invoking CMake build: \'{}\'".format(\' \'.join(cmake_build)))\n        sys.stdout.flush()\n        subprocess.check_call(cmake_build, cwd=build_folder)\n        \n        fullname = self.get_ext_fullname(ext.name)\n        filename = self.get_ext_filename(fullname)\n\n        if platform.system() == "Windows":\n            shutil.move(os.sep.join([build_folder, cfg, \'_kiwipiepy.dll\']), os.sep.join([extdir, filename]))\n        else:\n            shutil.move(glob(os.sep.join([build_folder, \'lib_kiwipiepy.*\']))[0], os.sep.join([extdir, filename]))\n        #print()\n\n\nhere = os.path.abspath(os.path.dirname(__file__))\nexec(open(\'kiwipiepy/_version.py\').read())\n\nlong_description = \'\'\'kiwipiepy\n----------\nkiwipiepy is a python version package of Kiwi(Korean Intelligent Word Identifier) which is a morphological analyzer for Korean.\n\nhttps://github.com/bab2min/kiwipiepy \'\'\'\n\n\nlibraries = []\n\nif platform.system() == \'Windows\': \n    if os.environ.get(\'USE_MIMALLOC\'): libraries.append(\'advapi32.lib\')\nelse: \n    pass\n\nsetup(\n    name=\'kiwipiepy\',\n    version=__version__,\n\n    description=\'Kiwi, the Korean Tokenizer for Python\',\n    long_description=long_description,\n\n    url=\'https://github.com/bab2min/kiwipiepy\',\n\n    author=\'bab2min\',\n    author_email=\'bab2min@gmail.com\',\n\n    license=\'LGPL v3 License\',\n\n    classifiers=[\n        \'Development Status :: 3 - Alpha\',\n\n        "Intended Audience :: Developers",\n        "Intended Audience :: Science/Research",\n        "Topic :: Software Development :: Libraries",\n        "Topic :: Text Processing :: Linguistic",\n\n        "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",\n\n        \'Programming Language :: Python :: 3\',\n        \'Programming Language :: C++\'\n    ],\n\n    keywords=\'Korean morphological analysis\',\n    install_requires=[\n        \'dataclasses; python_version &lt; "3.7"\',\n        \'kiwipiepy_model&gt;=0.22,&lt;0.23\',\n        \'numpy&lt;2; python_version &lt; "3.9"\',\n        \'numpy; python_version &gt;= "3.9"\',\n        \'tqdm\',\n    ],\n    packages=[\'kiwipiepy\'],\n    include_package_data=True,\n    ext_modules=[CMakeExtension(\'_kiwipiepy\',\n        libraries=libraries,\n        py_limited_api=is_limited_api,\n    )],\n    options={"bdist_wheel": {"py_limited_api": "cp39"}} if is_limited_api else {},\n    cmdclass=dict(build_ext=CMakeBuild),\n)\n', 'filename': 'C:/Users/Gebruiker/OneDrive/Computer/Bureaublad/BA2-DigitalKorea-Klink/Assignments/kiwipiepy-0.22.2/setup.py'}, {'name': 'custom_preprocessing_windows-users (2).py', 'script': '"""\nKorean Text Preprocessing for Orange Data Mining (Windows)\nRequires kiwipiepy pre-installed, then does POS-based tokenization and filtering.\n"""\n\nimport re\nimport pandas as pd\nfrom Orange.data import Table, Domain, StringVariable\nfrom kiwipiepy import Kiwi\n\nkiwi = Kiwi()\n\n# ===== CONFIGURATION =====\nTEXT_COLUMN = \'full_text\'  # &lt;&lt;&lt; CHANGE to match your corpus column name\n\n# POS tags to keep — uncomment tags you want to include\nPOS_TAGS = [\n    \'NNG\',  # Common noun (일반명사)\n    \'NNP\',  # Proper noun (고유명사)\n    #\'VV\',  # Verb (동사)\n    #\'VA\',  # Adjective (형용사)\n    #\'MAG\', # Adverb (부사)\n]\n\nREMOVE_NUMBERS = True\nMIN_TOKEN_LENGTH = 2\nMIN_DOC_FREQ = 0.1   # Minimum proportion of documents a word must appear in (10%)\nMAX_DOC_FREQ = 0.9   # Maximum proportion of documents a word can appear in (90%)\n\nSTOPWORDS = {\n    \'있다\', \'없다\', \'되다\', \'하다\', \'그\', \'저\', \'이\', \'것\', \'등\', \'및\',\n    \'수\', \'때\', \'년\', \'월\', \'일\', \'더\', \'또\', \'즉\', \'통해\', \'위해\'\n}\n\n# ===== PREPROCESSING =====\ndef clean_text(text):\n    if pd.isna(text):\n        return ""\n    text = str(text)\n    text = re.sub(r\'http[s]?://\\S+\', \'\', text)\n    text = re.sub(r\'\\S+@\\S+\', \'\', text)\n    text = re.sub(r\'@\\w+\', \'\', text)\n    text = re.sub(r\'[^\\w\\s\\u3131-\\u3163\\uac00-\\ud7a3\\u1100-\\u11ff]\', \' \', text)\n    text = re.sub(r\'\\s+\', \' \', text).strip()\n    return text\n\ndef preprocess(text):\n    text = clean_text(text)\n    if not text:\n        return ""\n\n    tokens = kiwi.tokenize(text)\n    morphemes = [token.form for token in tokens if token.tag in POS_TAGS]\n\n    filtered = []\n    for w in morphemes:\n        if w in STOPWORDS:\n            continue\n        if len(w) &lt; MIN_TOKEN_LENGTH:\n            continue\n        if REMOVE_NUMBERS and w.isdigit():\n            continue\n        filtered.append(w)\n\n    return \' \'.join(filtered)\n\n# ===== PROCESS DATA =====\ntry:\n    text_data = in_data.documents\nexcept AttributeError:\n    text_column_index = in_data.domain.index(TEXT_COLUMN)\n    text_data = [str(row[text_column_index]) for row in in_data]\n\nprocessed = [preprocess(text) for text in text_data]\n\n# ===== DOCUMENT FREQUENCY FILTERING =====\nif MIN_DOC_FREQ &gt; 0 or MAX_DOC_FREQ &lt; 1.0:\n    from collections import Counter\n\n    word_doc_counts = Counter()\n    for doc in processed:\n        unique_words = set(doc.split())\n        word_doc_counts.update(unique_words)\n\n    total_docs = len(processed)\n\n    filtered_processed = []\n    for doc in processed:\n        words = doc.split()\n        kept_words = [\n            w for w in words\n            if word_doc_counts[w] / total_docs &gt;= MIN_DOC_FREQ\n            and word_doc_counts[w] / total_docs &lt;= MAX_DOC_FREQ\n        ]\n        filtered_processed.append(\' \'.join(kept_words))\n\n    processed = filtered_processed\n    print(f"✓ Applied document frequency filtering (keep {MIN_DOC_FREQ:.0%}–{MAX_DOC_FREQ:.0%})")\n\n# ===== OUTPUT =====\nnew_var = StringVariable(\'processed_text\')\nnew_domain = Domain(\n    in_data.domain.attributes,\n    in_data.domain.class_vars,\n    in_data.domain.metas + (new_var,)\n)\n\nout_data = in_data.transform(new_domain)\nwith out_data.unlocked():\n    out_data.get_column(new_var)[:] = processed\n\nprint(f"✓ Processed {len(processed)} documents")\n', 'filename': 'C:/Users/Gebruiker/Downloads/custom_preprocessing_windows-users (2).py'}], 'scriptText': '"""\nKorean Text Preprocessing for Orange Data Mining (Windows)\nRequires kiwipiepy pre-installed, then does POS-based tokenization and filtering.\n"""\n\nimport re\nimport pandas as pd\nfrom Orange.data import Table, Domain, StringVariable\nfrom kiwipiepy import Kiwi\n\nkiwi = Kiwi()\n\n# ===== CONFIGURATION =====\nTEXT_COLUMN = \'full_text\'  # &lt;&lt;&lt; CHANGE to match your corpus column name\n\n# POS tags to keep — uncomment tags you want to include\nPOS_TAGS = [\n    \'NNG\',  # Common noun (일반명사)\n    \'NNP\',  # Proper noun (고유명사)\n    #\'VV\',  # Verb (동사)\n    #\'VA\',  # Adjective (형용사)\n    #\'MAG\', # Adverb (부사)\n]\n\nREMOVE_NUMBERS = True\nMIN_TOKEN_LENGTH = 2\nMIN_DOC_FREQ = 0.1   # Minimum proportion of documents a word must appear in (10%)\nMAX_DOC_FREQ = 0.9   # Maximum proportion of documents a word can appear in (90%)\n\nSTOPWORDS = {\n    \'있다\', \'없다\', \'되다\', \'하다\', \'그\', \'저\', \'이\', \'것\', \'등\', \'및\',\n    \'수\', \'때\', \'년\', \'월\', \'일\', \'더\', \'또\', \'즉\', \'통해\', \'위해\'\n}\n\n# ===== PREPROCESSING =====\ndef clean_text(text):\n    if pd.isna(text):\n        return ""\n    text = str(text)\n    text = re.sub(r\'http[s]?://\\S+\', \'\', text)\n    text = re.sub(r\'\\S+@\\S+\', \'\', text)\n    text = re.sub(r\'@\\w+\', \'\', text)\n    text = re.sub(r\'[^\\w\\s\\u3131-\\u3163\\uac00-\\ud7a3\\u1100-\\u11ff]\', \' \', text)\n    text = re.sub(r\'\\s+\', \' \', text).strip()\n    return text\n\ndef preprocess(text):\n    text = clean_text(text)\n    if not text:\n        return ""\n\n    tokens = kiwi.tokenize(text)\n    morphemes = [token.form for token in tokens if token.tag in POS_TAGS]\n\n    filtered = []\n    for w in morphemes:\n        if w in STOPWORDS:\n            continue\n        if len(w) &lt; MIN_TOKEN_LENGTH:\n            continue\n        if REMOVE_NUMBERS and w.isdigit():\n            continue\n        filtered.append(w)\n\n    return \' \'.join(filtered)\n\n# ===== PROCESS DATA =====\ntry:\n    text_data = in_data.documents\nexcept AttributeError:\n    text_column_index = in_data.domain.index(TEXT_COLUMN)\n    text_data = [str(row[text_column_index]) for row in in_data]\n\nprocessed = [preprocess(text) for text in text_data]\n\n# ===== DOCUMENT FREQUENCY FILTERING =====\nif MIN_DOC_FREQ &gt; 0 or MAX_DOC_FREQ &lt; 1.0:\n    from collections import Counter\n\n    word_doc_counts = Counter()\n    for doc in processed:\n        unique_words = set(doc.split())\n        word_doc_counts.update(unique_words)\n\n    total_docs = len(processed)\n\n    filtered_processed = []\n    for doc in processed:\n        words = doc.split()\n        kept_words = [\n            w for w in words\n            if word_doc_counts[w] / total_docs &gt;= MIN_DOC_FREQ\n            and word_doc_counts[w] / total_docs &lt;= MAX_DOC_FREQ\n        ]\n        filtered_processed.append(\' \'.join(kept_words))\n\n    processed = filtered_processed\n    print(f"✓ Applied document frequency filtering (keep {MIN_DOC_FREQ:.0%}–{MAX_DOC_FREQ:.0%})")\n\n# ===== OUTPUT =====\nnew_var = StringVariable(\'processed_text\')\nnew_domain = Domain(\n    in_data.domain.attributes,\n    in_data.domain.class_vars,\n    in_data.domain.metas + (new_var,)\n)\n\nout_data = in_data.transform(new_domain)\nwith out_data.unlocked():\n    out_data.get_column(new_var)[:] = processed\n\nprint(f"✓ Processed {len(processed)} documents")\n', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa1\x00\x00\x00a\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="3" format="pickle">gASV2QMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfZmlsZXOUXZQojEZD
+Oi9Vc2Vycy9HZWJydWlrZXIvRG93bmxvYWRzL3ByZXNpZGVudF9zcGVlY2hlc19kZW1vY3JhdGlj
+X2VyYSAoMSkuY3N2lIxCQzovVXNlcnMvR2VicnVpa2VyL0Rvd25sb2Fkcy9wcmVzaWRlbnRfc3Bl
+ZWNoZXNfZGVtb2NyYXRpY19lcmEuY3N2lIwRYm9vay1leGNlcnB0cy50YWKUjBhncmltbS10YWxl
+cy1zZWxlY3RlZC50YWKUjBhlbGVjdGlvbi10d2VldHMtMjAxNi50YWKUjBdmcmllbmRzLXRyYW5z
+Y3JpcHRzLnRhYpSMDGFuZGVyc2VuLnRhYpRljBNzYXZlZFdpZGdldEdlb21ldHJ5lENCAdnQywAD
+AAAAAAImAAAA3wAAA9kAAAIzAAACJwAAAP0AAAPYAAACMgAAAAAAAAAABgAAAAInAAAA/QAAA9gA
+AAIylIwLX192ZXJzaW9uX1+USwKMEGNvbnRleHRfc2V0dGluZ3OUXZQojBVvcmFuZ2V3aWRnZXQu
+c2V0dGluZ3OUjAdDb250ZXh0lJOUKYGUfZQojAZ2YWx1ZXOUfZQojAhsYW5ndWFnZZSMAmtvlEr+
+////hpSMDnRpdGxlX3ZhcmlhYmxllIwNcmVzcG9uc2VfdGV4dJRLZ4aUjAp1c2VkX2F0dHJzlF2U
+aBtLZ4aUYUr9////hpRoDUsCdYwKYXR0cmlidXRlc5R9lCiMBnJlc3BpZJRLAowNcmVzcG9uc2Vf
+dHlwZZRLAYwDc2V4lEsBjAthZ2VfY29ob3J0c5RLAYwNcG9saXRpY2FsX2lkM5RLAYwQY2xvc2Vf
+bmttaWdyYW50c5RLAXWMBW1ldGFzlH2UKIwNcmVzcG9uc2VfdGV4dJRLA4wOcHJvY2Vzc2VkX3Rl
+eHSUSwN1jA5kb2N1bWVudHNfaGFzaJSKEZh2H7LCpJUjM930NGCLUp8AaBdoGHViaBIpgZR9lCho
+FX2UKGgXjAJrb5RK/v///4aUaBqMC3NwZWVjaF90ZXh0lEtnhpRoHV2UjAV0aXRsZZRLZ4aUYUr9
+////hpRoDUsCdWghfZQojA9kaXZpc2lvbl9udW1iZXKUSwKMCXByZXNpZGVudJRLAYwIbG9jYXRp
+b26USwGMBGtpbmSUSwF1aCl9lCiMBXRpdGxllEsDjARkYXRllEsDjAtzcGVlY2hfdGV4dJRLA3Vo
+LYoQ4YmEOvTXz8X0+oVrvfmgHGgXTnViZXUu
+</properties>
+		<properties node_id="4" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'lilah_language': 'sl', 'liu_language': 'en', 'method_idx': 2, 'multi_language': 'ko', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02R\x00\x00\x00\xe0\x00\x00\x03\xae\x00\x00\x023\x00\x00\x02S\x00\x00\x00\xfe\x00\x00\x03\xad\x00\x00\x022\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02S\x00\x00\x00\xfe\x00\x00\x03\xad\x00\x00\x022', 'senti_language': 'en', '__version__': 2}</properties>
+		<properties node_id="5" format="pickle">gASVFgMAAAAAAAB9lCiMB2NvbXBhcmWUSwKMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNvcmRlcl9i
+eV9pbXBvcnRhbmNllImMHG9yZGVyX2dyb3VwaW5nX2J5X2ltcG9ydGFuY2WUiYwTc2F2ZWRXaWRn
+ZXRHZW9tZXRyeZRDQgHZ0MsAAwAA//////////kAAAYAAAADMAAAAAAAAAAXAAAF/wAAAy8AAAAA
+AgAAAAYAAAAAAAAAABcAAAX/AAADL5SMEHNob3dfYW5ub3RhdGlvbnOUiIwLc2hvd19sYWJlbHOU
+iIwNc2lnX3RocmVzaG9sZJRHP6mZmZmZmZqMCnNvcnRfZnJlcXOUiYwIc3RhdHRlc3SUSwCMCXN0
+cmV0Y2hlZJSIjAtfX3ZlcnNpb25fX5RLAYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdp
+ZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCWF0dHJpYnV0ZZSM
+CXNlbnRpbWVudJRLZoaUjAlncm91cF92YXKUjAthZ2VfY29ob3J0c5RLZYaUjAlzZWxlY3Rpb26U
+KUr+////hpRoDUsBdYwKYXR0cmlidXRlc5R9lCiMBnJlc3BpZJRLAowNcmVzcG9uc2VfdHlwZZRL
+AYwDc2V4lEsBjAthZ2VfY29ob3J0c5RLAYwNcG9saXRpY2FsX2lkM5RLAYwQY2xvc2VfbmttaWdy
+YW50c5RLAYwJc2VudGltZW50lEsCdYwFbWV0YXOUfZQojA1yZXNwb25zZV90ZXh0lEsDjA5wcm9j
+ZXNzZWRfdGV4dJRLA3V1YmgSKYGUfZQoaBV9lChoF4wPZGl2aXNpb25fbnVtYmVylEtmhpRoGk5K
+/v///4aUaB0pSv7///+GlGgNSwF1aB99lChoL0sCjAlwcmVzaWRlbnSUSwGMCGxvY2F0aW9ulEsB
+jARraW5klEsBaBhLAnVoKH2UKIwFdGl0bGWUSwOMBGRhdGWUSwOMC3NwZWVjaF90ZXh0lEsDdXVi
+ZXUu
+</properties>
+		<properties node_id="6" format="pickle">gASVkgIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZl
+ZFdpZGdldEdlb21ldHJ5lENCAdnQywADAAD/////////+QAABgAAAAMwAAAAAAAAABcAAAX/AAAD
+LwAAAAACAAAABgAAAAAAAAAAFwAABf8AAAMvlIwRc2VsX2FnZ19mdW5jdGlvbnOUj5QoSwOQjAlz
+ZWxlY3Rpb26Uj5SMC19fdmVyc2lvbl9flEsCjBBjb250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdl
+d2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwLY29sX2ZlYXR1
+cmWUjANzZXiUS2WGlIwLcm93X2ZlYXR1cmWUjAthZ2VfY29ob3J0c5RLZYaUjAt2YWxfZmVhdHVy
+ZZSMCXNlbnRpbWVudJRLZoaUaAlLAnWMCmF0dHJpYnV0ZXOUfZQojAZyZXNwaWSUSwKMDXJlc3Bv
+bnNlX3R5cGWUSwFoFEsBaBdLAYwNcG9saXRpY2FsX2lkM5RLAYwQY2xvc2VfbmttaWdyYW50c5RL
+AWgaSwJ1jAVtZXRhc5R9lCiMDXJlc3BvbnNlX3RleHSUSwOMDnByb2Nlc3NlZF90ZXh0lEsDdXVi
+aA4pgZR9lChoEX2UKGgTTkr+////hpRoFowPZGl2aXNpb25fbnVtYmVylEtmhpRoGWgqS2aGlGgJ
+SwJ1aBx9lChoKksCjAlwcmVzaWRlbnSUSwGMCGxvY2F0aW9ulEsBjARraW5klEsBaBpLAnVoIn2U
+KIwFdGl0bGWUSwOMBGRhdGWUSwOMC3NwZWVjaF90ZXh0lEsDdXViZXUu
+</properties>
+		<properties node_id="7" format="pickle">gASVfgQAAAAAAAB9lCiMDWF0dHJfeF9pc19hYnOUiYwNYXR0cl95X2lzX2Fic5SJjAthdXRvX2Nv
+bW1pdJSIjAthdXRvX3NhbXBsZZSIjBJjb250cm9sQXJlYVZpc2libGWUiIwTc2F2ZWRXaWRnZXRH
+ZW9tZXRyeZRDQgHZ0MsAAwAA//////////kAAAYAAAADMAAAAQAAAAB4AAAE/wAAArcAAAAAAgAA
+AAYAAAAAAAAAABcAAAX/AAADL5SMCXNlbGVjdGlvbpROjBF0b29sdGlwX3Nob3dzX2FsbJSJjA92
+aXN1YWxfc2V0dGluZ3OUfZSMBWdyYXBolH2UKIwLYWxwaGFfdmFsdWWUS4CMDWNsYXNzX2RlbnNp
+dHmUiYwRaml0dGVyX2NvbnRpbnVvdXOUiYwLaml0dGVyX3NpemWUSwCME2xhYmVsX29ubHlfc2Vs
+ZWN0ZWSUiYwWb3J0aG9ub3JtYWxfcmVncmVzc2lvbpSJjAtwb2ludF93aWR0aJRLAYwMc2hvd19l
+bGxpcHNllImMCXNob3dfZ3JpZJSJjAtzaG93X2xlZ2VuZJSIjA1zaG93X3JlZ19saW5llIh1jAtf
+X3ZlcnNpb25fX5RLBYwQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5nZXdpZGdldC5zZXR0aW5n
+c5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMCmF0dHJfY29sb3KUjA1wb2xpdGljYWxf
+aWQzlEtlhpSMCmF0dHJfbGFiZWyUTkr+////hpSMCmF0dHJfc2hhcGWUTkr+////hpSMCWF0dHJf
+c2l6ZZROSv7///+GlIwGYXR0cl94lIwQY2xvc2VfbmttaWdyYW50c5RLZYaUjAxhdHRyX3hfbG93
+ZXKUTkr+////hpSMDGF0dHJfeF91cHBlcpROSv7///+GlIwGYXR0cl95lIwJc2VudGltZW50lEtm
+hpSMDGF0dHJfeV9sb3dlcpROSv7///+GlIwMYXR0cl95X3VwcGVylE5K/v///4aUaAx9lGgZSwV1
+jAphdHRyaWJ1dGVzlH2UKIwGcmVzcGlklEsCjA1yZXNwb25zZV90eXBllEsBjANzZXiUSwGMC2Fn
+ZV9jb2hvcnRzlEsBaCRLAWgtSwFoNEsCdYwFbWV0YXOUfZQojA1yZXNwb25zZV90ZXh0lEsDjA5w
+cm9jZXNzZWRfdGV4dJRLA3V1YmgeKYGUfZQoaCF9lChoI05K/v///4aUaCZOSv7///+GlGgoTkr+
+////hpRoKk5K/v///4aUaCyMD2RpdmlzaW9uX251bWJlcpRLZoaUaC9OSv7///+GlGgxTkr+////
+hpRoM4wJcHJlc2lkZW50lEtlhpRoNk5K/v///4aUaDhOSv7///+GlGgMfZRoGUsFdWg7fZQoaExL
+AmhQSwGMCGxvY2F0aW9ulEsBjARraW5klEsBaDRLAnVoQX2UKIwFdGl0bGWUSwOMBGRhdGWUSwOM
+C3NwZWVjaF90ZXh0lEsDdXViZXUu
+</properties>
+		<properties node_id="8" format="pickle">gASV8wMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAVoAAACAAAAEpQAAApIAAAFbAAAAngAABKQAAAKR
+AAAAAAAAAAAGAAAAAVsAAACeAAAEpAAAApGUjA5zdG9yZWRzZXR0aW5nc5R9lCiMBG5hbWWUjACU
+jA1wcmVwcm9jZXNzb3JzlF2UKIwUcHJlcHJvY2Vzcy50cmFuc2Zvcm2UfZSMB21ldGhvZHOUXZQo
+SwBLAUsCSwNlc4aUjBNwcmVwcm9jZXNzLnRva2VuaXpllH2UKIwGbWV0aG9klEsBjAdwYXR0ZXJu
+lIwDXHcrlHWGlIwRcHJlcHJvY2Vzcy5maWx0ZXKUfZQojAdhYnNfZW5klEsKjAlhYnNfc3RhcnSU
+SwGMCWZyZXFfdHlwZZRLAIwIaW5jbF9udW2UiYwLaW52YWxpZGF0ZWSURz/Y3GbiMSMujAdseF9s
+aXN0lF2UjAdseF9wYXRolE6MB21ldGhvZHOUXZQoSwBLAksDZYwIbl90b2tlbnOUS2SMB3BhdHRl
+cm6UjFtcLnwsfDp8O3whfFw/fFwofFwpfFx8fFwrfFwnfFwifOKAmHzigJl84oCcfOKAnXxcJ3xc
+4oCZfOKApnxcLXzigJN84oCUfFwkfCZ8XCp8Pnw8fFwvfFxbfFxdlIwIcG9zX3RhZ3OUjAlOT1VO
+LFZFUkKUjAdyZWxfZW5klEc/7MzMzMzMzYwJcmVsX3N0YXJ0lEc/uZmZmZmZmowHc3dfbGlzdJRd
+lIweb3Jhbmdld2lkZ2V0LnV0aWxzLmZpbGVkaWFsb2dzlIwKUmVjZW50UGF0aJSTlCmBlH2UKIwH
+YWJzcGF0aJSMLUM6L1VzZXJzL0dlYnJ1aWtlci9Eb3dubG9hZHMvc3RvcHdvcmRzX2tvLnR4dJSM
+BnByZWZpeJROjAdyZWxwYXRolE6MBXRpdGxllGgIjAVzaGVldJRoCIwLZmlsZV9mb3JtYXSUTnVi
+YYwHc3dfcGF0aJRoLSmBlH2UKGgwjC1DOi9Vc2Vycy9HZWJydWlrZXIvRG93bmxvYWRzL3N0b3B3
+b3Jkc19rby50eHSUaDJOaDNOaDRoCGg1aAhoNk51YnWGlIwUcHJlcHJvY2Vzcy5ub3JtYWxpemWU
+fZQojAZtZXRob2SUSwGMD3VkcGlwZV9sYW5ndWFnZZSMAmtvlIwQdWRwaXBlX3Rva2VuaXplcpSJ
+dYaUaDx9lIwPdWRwaXBlX2xhbmd1YWdllIwCa2+Uc4aUZXWMC19fdmVyc2lvbl9flEsEdS4=
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
